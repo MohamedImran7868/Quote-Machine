@@ -52,6 +52,10 @@ function QuoteMachine(){
         }, 400);
     }
 
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+        `"${currentQuote.quote}" - ${currentQuote.author}`
+    )}`;
+
     return(
     <div>
         <div id="quote-box" className="quote-box">
@@ -59,7 +63,7 @@ function QuoteMachine(){
             <span id="author" className={`author ${fade ? "fade-in" : "fade-out"}`}>-{currentQuote.author}</span>
             <div className="btn-container">
                 <button id="new-quote" className="new-quote btn" onClick={nextQuote}>New Quote</button>
-                <button className="btn"><a id="tweet-quote" className="tweet-quote" href="twitter.com/intent/tweet" target="_top" rel="noopener noreferrer"><FaTwitter /></a></button>
+                <button className="btn"><a id="tweet-quote" className="tweet-quote" href={tweetUrl} target="_top" rel="noopener noreferrer"><FaTwitter /></a></button>
             </div>
         </div>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
