@@ -15,8 +15,9 @@ A simple web application that generates random inspirational quotes with the opt
 
 - HTML5  
 - CSS3  
-- JavaScript  
-- [QuoteGarden API](https://pprathameshmore.github.io/QuoteGarden/) (for quote data)  
+- JavaScript 
+- Fetch API 
+- [Quote API](https://www.api-ninjas.com/api/quotes) (for quote data)  
 
 ## Live Demo  
 
