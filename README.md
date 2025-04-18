@@ -1,6 +1,6 @@
 # Quote Machine  
 
-![Quote Machine Preview](.src//screenshot.png)  
+![Quote Machine Preview](./public/screenshot.webp)  
 
 A simple web application that generates random inspirational quotes with the option to share them on Twitter.  
 
